@@ -7,7 +7,7 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo logo" href="#">
-        <img class="logo__image" src="/source/img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
+        <img class="logo__image" src="./img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
       <nav class="main-header__navigation navigation">
         <button class="navigation__toggle" type="button">
@@ -17,22 +17,22 @@
         </button>
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--current" href="/source/index.html">
+            <a class="navigation__link navigation__link--current" href="./index.html">
               Главная
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="/source/gallery.html">
+            <a class="navigation__link" href="./gallery.html">
               Фото и видео
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="/source/form.html">
+            <a class="navigation__link" href="./form.html">
               Форма отзыва
             </a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="https://htmlacademy.ru">
+            <a class="navigation__link" href="https://htmlacademy.ru" target="_blank">
               HTML Academy
             </a>
           </li>
@@ -40,14 +40,14 @@
       </nav>
     </header>
     <main class="main">
-      <div class="hero hero--index">
-        <img class="hero__image" src="/source/img/welcome.svg" width="282" height="214" alt="Добро пожаловать в Седоную.">
+      <div class="hero hero--main">
+        <img class="hero__image" src="./img/welcome.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
       </div>
       <h1 class="title title--index">
         Седона — небольшой городок в Аризоне, заслуживающий большего!
       </h1>
       <section class="main__section section advantages">
-        <h2 class="section__description section__description--advantages">
+        <h2 class="section__description">
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
         </h2>
         <ol class="advantages__list">
@@ -63,7 +63,7 @@
                 Cедона не аттракцион для туристов, там течет своя жизнь
               </p>
             </div>
-            <img class="advantages__image" src="/source/img/photo-city.jpg" alt="Вид на город." width="320" height="260">
+            <img class="advantages__image" src="./img/photo-city.jpg" alt="Вид на город." width="320" height="260">
             <ul class="advantages__subitem subitems">
               <li class="subitems__item subitems__item--house advantages__card">
                 <h4 class="card__title subitems__title">
@@ -103,7 +103,7 @@
                 Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
             </div>
-            <img class="advantages__image" src="/source/img/photo-bridge.jpg" alt="Мост дьявола." width="320" height="260">
+            <img class="advantages__image" src="./img/photo-bridge.jpg" alt="Мост дьявола." width="320" height="260">
           </li>
           <li class="advantages__item">
             <div class="advantages__card card">
@@ -153,7 +153,7 @@
         <p class="section__description">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне
         </p>
-        <a class="button button--appointment" href="#">
+        <a class="button appointment__button" href="#">
           Найти гостиницу
         </a>
       </section>
@@ -161,11 +161,13 @@
         <h2 class="visually-hidden">
           Как нас найти.
         </h2>
-        <img class="map__content" src="/source/img/map-mobile.jpg" width="320" height="350" alt="Седона на карте.">
+        <img class="map__content" src="./img/map-mobile.jpg" width="320" height="350" alt="Седона на карте.">
       </section>
     </main>
     <footer class="footer">
-      <a class="footer__link footer__link--hashtag" href="https://twitter.com/hashtag/visitsedona">#visitsedona</a>
+      <a class="footer__link footer__link--hashtag" href="https://twitter.com/hashtag/visitsedona" target="_blank">
+        #visitsedona
+      </a>
       <ul class="footer__social-list social-list">
         <li class="social-list__social-item">
           <a class="social-list__social-link" href="https://vk.com/htmlacademy" target="_blank">
@@ -192,7 +194,6 @@
           </a>
         </li>
       </ul>
-
       <a class="footer__link link footer__link--academy" href="https://htmlacademy.ru/" target="_blank">
         <span class="link__title">
           Разработано
@@ -201,7 +202,6 @@
           <path d="M18.15 2.25h-.1L4.5 3.59v23.63l13.55 7.66 13.45-7.66V3.6L18.15 2.25ZM29.6 13.83l-11.54-6.5v-.1h-.1l-.1-.1v.1L6.4 13.83V5.22l11.54-1.15 11.64 1.15v8.6ZM17.95 8.76l11.54 6.4-4.51 2.5-7.13-4.02v1.33l5.92 3.35-.9.48-5.02-2.87v1.34l3.81 2.2-.8.48-3.01-1.72v1.34l1.9 1.05-1.8 1.05-11.44-6.4 11.44-6.51ZM6.41 16.7l11.44 6.5v.96l-7.93-4.5V21l8.03 4.6v1.05l-8.03-4.5v1.34l8.03 4.6 8.13-4.7v-4.97l3.41-1.91v9.56l-11.54 6.6-11.54-6.5V16.7Z" fill="#000"/>
         </svg>
       </a>
-
     </footer>
   </body>
 </html>
