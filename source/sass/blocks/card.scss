@@ -1,0 +1,9 @@
+.card {
+  padding: 26px;
+  background-color: $color-background-secondary;
+    &--main {
+      padding: 40px 16px 35px;
+      background-color: $color-base;
+  }
+}
+

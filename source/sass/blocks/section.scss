@@ -1,0 +1,19 @@
+.section {
+  text-align: center;
+}
+
+.section__title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.section__description {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-text-additional;
+}
