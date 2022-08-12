@@ -1,0 +1,40 @@
+.fieldset {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding: 24px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 320px;
+      height: 1px;
+      border-bottom:1px solid $color-input-hover;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 320px;
+      height: 1px;
+      border-top:1px solid $color-input-hover;
+    }
+}
+
+.fieldset__legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+    &--control {
+      margin-bottom: 30px;
+    }
+}

@@ -1,4 +1,20 @@
-.advantages__subitem {
+.advantages__subitems {
+  font-family: inherit;
+  text-transform: uppercase;
   list-style: none;
-  padding: 0;
+  padding: 31px 18px 52px;
+}
+
+.subitems__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+
+.subitems__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
 }

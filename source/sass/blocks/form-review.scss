@@ -1,0 +1,18 @@
+.form-review {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.form-review__button {
+  padding: 18px 20px 14px;
+}
+
+.form-review__remark {
+  align-self: flex-end;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: $color-text-placeholder;
+  margin-top: 3px;
+}
