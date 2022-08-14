@@ -1,0 +1,35 @@
+.card {
+  font-family: inherit;
+  padding: 26px;
+  background-color: $color-background-secondary;
+  text-align: center;
+  text-transform: uppercase;
+    &--main {
+      padding: 54px 20px 40px;
+      background-color: $color-base;
+      color: $color-text-secondary;
+  }
+}
+
+.card__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 11px;
+}
+
+.card__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+}
+
+.card__numeration {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 17px;
+}

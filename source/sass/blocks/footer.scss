@@ -1,0 +1,28 @@
+.footer {
+  padding: 28px 18px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__link {
+  font-family: inherit;
+  text-decoration: none;
+  color: $color-text-base;
+  &--hashtag {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 34px;
+  }
+  &--academy {
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    gap: 10px;
+  }
+}
+.link__title {
+  align-self: center;
+}

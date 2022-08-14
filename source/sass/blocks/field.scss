@@ -1,0 +1,100 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 21px;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    &--control {
+      padding-left: 62px;
+    }
+}
+
+.field__label {
+  padding-left: 16px;
+    &--control {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      text-transform: none;
+      margin-bottom: 36px;
+    }
+}
+
+.field__input {
+  height: 58px;
+  background-color: $color-input;
+  border: 0;
+  padding: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  position: relative;
+    &::placeholder {
+      color: $color-text-placeholder;
+    }
+    &--phone::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 58px;
+      height: 58px;
+      background-color: #e6e6e6;
+    }
+}
+
+.field__radio {
+  padding-left: 62px;
+  margin: 0;
+  width: 1px;
+  height: 1px;
+  background: #FFFFFF;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.field__checkbox {
+  padding-left: 62px;
+  margin: 0;
+  width: 1px;
+  height: 1px;
+  background: #FFFFFF;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.field__control--radio {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: $color-input;
+  border-radius: 50%;
+  margin-left: -62px;
+  margin-top: -10px;
+}
+
+.field__control--checkbox {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: $color-input;
+  border-radius: 4px;
+  margin-left: -62px;
+  margin-top: -10px;
+}
+
+.textarea {
+  color: $color-text-placeholder;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  border: 0;
+  background-color: $color-input;
+  padding: 16px;
+  resize: none;
+  margin-bottom: 32px;
+}

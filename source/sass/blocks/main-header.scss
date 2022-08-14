@@ -1,0 +1,15 @@
+.main-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-height: 56px;
+}
+
+.main-header__logo {
+  z-index: 1;
+  position: relative;
+}
+
+.main-header__navigation {
+  align-self: center;
+}

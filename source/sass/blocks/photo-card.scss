@@ -1,0 +1,13 @@
+.photo-card {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 25px 20px;
+}
+
+.photo-card__image {
+  display: block;
+}
+
+.photo-card__link {
+  margin: 0;
+}
