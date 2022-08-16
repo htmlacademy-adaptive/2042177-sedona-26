@@ -1,14 +1,22 @@
 .card {
   font-family: inherit;
   padding: 26px;
-  background-color: $color-background-secondary;
+  max-width: 282px;
+  align-self: center;
   text-align: center;
   text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    min-width: 256px;
+    width: 33.33%;
+    max-width: 400px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 47px 52px 56px;
+  }
     &--main {
       padding: 54px 20px 40px;
-      background-color: $color-base;
       color: $color-text-secondary;
-  }
+    }
 }
 
 .card__title {

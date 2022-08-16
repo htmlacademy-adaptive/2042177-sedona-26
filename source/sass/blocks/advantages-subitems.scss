@@ -3,7 +3,22 @@
   text-transform: uppercase;
   list-style: none;
   padding: 31px 18px 52px;
+  background-color: $color-background-base;
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;;
+  }
 }
+
+@media (min-width: $tablet-width) {
+  .subitems__item {
+    width: 33.33%;
+    text-align: center;
+    padding: 60px 36px;
+  }
+}
+
 
 .subitems__title {
   margin: 0;

@@ -2,15 +2,17 @@
   background-color: $color-background-third;
   font-family: "PT Sans", sans-serif;
   color: $color-text-base;
+  max-width: 1280px;
 }
 
 .page__body {
   background-color: $color-background-base;
   min-height: 100%;
+  max-width: 1200px;
+  min-width: 320px;
 }
 
 .page__container {
-  width: 320px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

@@ -1,0 +1,12 @@
+
+@media (min-width: $tablet-width) {
+  .video-presentation {
+    padding: 52px 60px 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-presentation {
+    padding-top: 63px 200px 84px;
+  }
+}

@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Фото и видео</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -17,19 +18,19 @@
               Меню.
             </span>
           </button>
-          <ul class="navigation__list visually-hidden">
+          <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link " href="./index.html">
                 Главная
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="./gallery.html">
+              <a class="navigation__link navigation__link--current" href="./gallery.html">
                 Фото и видео
               </a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--current" href="./form.html">
+              <a class="navigation__link" href="./form.html">
                 Форма отзыва
               </a>
             </li>
@@ -58,8 +59,8 @@
             Фото-галерея.
           </h2>
           <ul class="photo__list">
-            <li class="photo__item">
-              <article class="photo-card photo-card--top-rated">
+            <li class="photo__item photo__item--top-rated">
+              <article class="photo-card photo-card">
                 <div class="photo-card__info card-info">
                   <div class="card-info__text-wrapper">
                     <h3 class="card-info__title">
