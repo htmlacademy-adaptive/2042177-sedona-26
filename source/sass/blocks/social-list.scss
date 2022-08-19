@@ -5,7 +5,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  @media (max-width: $mobile-width) {
   margin-bottom: 40px;
+  }
 }
 
 .social-list__item {

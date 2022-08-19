@@ -8,12 +8,13 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;;
+    padding: 0;
   }
 }
 
 @media (min-width: $tablet-width) {
   .subitems__item {
-    width: 33.33%;
+    flex-basis: 33.33%;
     text-align: center;
     padding: 60px 36px;
   }
