@@ -1,14 +1,30 @@
 .card {
   font-family: inherit;
   padding: 26px;
-  background-color: $color-background-secondary;
+  min-width: 256px;
+  align-self: center;
   text-align: center;
   text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    flex-basis: 33.33%;
+    max-width: 400px;
+    padding: 42px 40px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 43px 62px;
+  }
     &--main {
       padding: 54px 20px 40px;
-      background-color: $color-base;
       color: $color-text-secondary;
-  }
+      @media (min-width: $tablet-width) {
+        padding: 42px 34px;
+        align-self: stretch;
+      }
+      @media (min-width: $desktop-width) {
+        padding: 50px 52px;
+      }
+    }
+
 }
 
 .card__title {

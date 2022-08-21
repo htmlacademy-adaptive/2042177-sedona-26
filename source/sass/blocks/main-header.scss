@@ -1,15 +1,25 @@
 .main-header {
-  display: flex;
-  justify-content: center;
+  min-height: 56px;
   position: relative;
-  max-height: 56px;
+  @media (max-width: $mobile-width) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .main-header__logo {
   z-index: 1;
   position: relative;
+  @media (min-height:$tablet-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
 }
 
-.main-header__navigation {
-  align-self: center;
+@media (max-width: $mobile-width) {
+  .main-header__navigation {
+    align-self: center;
+  }
 }

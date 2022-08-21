@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.modal__container {
+.modal--container {
   position: fixed;
   top: 0;
   left: 0;
@@ -20,7 +20,7 @@
   min-width: max-content;
 }
 
-.modal__container--close {
+.modal-container--close {
   display: none;
 }
 

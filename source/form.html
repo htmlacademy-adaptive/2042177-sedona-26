@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Форма отзыва</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -54,109 +55,149 @@
           </p>
         </div>
         <form class="review__form form form-review " action="https://echo.htmlacademy.ru/" method="post">
-          <div class="form-review__fieldset fieldset">
-            <span class="fieldset__legend" >
-              Представьтесь:
-            </span>
-            <label class="fieldset__field field">
-              <span class="field__label">
-                  Имя*:
-                </span>
-              <input class="field__input" type="text" placeholder="Имя" value="Пётр" name="name" required>
-            </label>
-            <label class="fieldset__field field">
-              <span class="field__label">
-                Фамилия*:
+          <div class="form-review__wrapper">
+            <div class="form-review__fieldset fieldset">
+              <h2 class="fieldset__legend" >
+                Представьтесь:
+              </h2>
+              <ul class="fieldset__list fieldset__list--input">
+                <li class="fieldset__item">
+                  <label class="fieldset__field field">
+                    <span class="field__label">
+                        Имя*:
+                      </span>
+                    <input class="field__input" type="text" placeholder="Имя" value="Пётр" name="name" required>
+                  </label>
+                </li>
+                <li class="fieldset__item">
+                  <label class="fieldset__field field">
+                    <span class="field__label">
+                      Фамилия*:
+                    </span>
+                    <input class="field__input" type="text" placeholder="Фамилия" value="Пустота" name="surname" required>
+                  </label>
+                </li>
+                <li class="fieldset__item">
+                  <label class="fieldset__field field">
+                    <span class="field__label">
+                    Отчество:
+                    </span>
+                    <input class="field__input" type="text" placeholder="Отчество" value="Викторович" name="lastname">
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="form-review__fieldset fieldset">
+              <h2 class="fieldset__legend fieldset__legend--contacts" >
+                Контактная информация:
+              </h2>
+              <ul class="fieldset__list fieldset__list--input">
+                <li class="fieldset__item">
+                  <label class="fieldset__field field">
+                    <span class="field__label">
+                    Контактный телефон*:
+                    </span>
+                    <input class="field__input field__input--phone" type="tel" placeholder="Введите телефон" name="phone" required>
+                  </label>
+                </li>
+                <li class="fieldset__item">
+                  <label class="fieldset__field field">
+                    <span class="field__label">
+                    Электронная почта*:
+                    </span>
+                    <input class="field__input field__input--email" type="email" name="email" placeholder="Введите e-mail" required>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-review__fieldset fieldset fieldset--impression">
+            <h2 class="fieldset__legend fieldset__legend--control fieldset__legend--divider" >
+              <span>
+                Ваше общее впечатление:
               </span>
-              <input class="field__input" type="text" placeholder="Фамилия" value="Пустота" name="surname" required>
-            </label>
-            <label class="fieldset__field field">
-              <span class="field__label">
-              Отчество:
+            </h2>
+            <ul class="fieldset__list fieldset__list--control">
+              <li class="fieldset__item">
+                <label class="fieldset__field field field--control">
+                  <span class="field__label field__label--control">
+                    Скорее положительное
+                  </span>
+                  <span class="field__control field__control--radio"></span>
+                  <input class="field__radio" type="radio" value="positive" name="impression" checked>
+                </label>
+              </li>
+              <li class="fieldset__item">
+                <label class="fieldset__field field field--control">
+                  <span class="field__label field__label--control">
+                    Скорее отрицательное
+                  </span>
+                  <span class="field__control field__control--radio"></span>
+                  <input class="field__radio" type="radio" value="negative" name="impression">
+                </label>
+              </li>
+              <li class="fieldset__item">
+                <label class="fieldset__field field field--control">
+                  <span class="field__label field__label--control">
+                    Затрудняюсь ответить
+                  </span>
+                  <span class="field__control field__control--radio"></span>
+                  <input class="field__radio" type="radio" value="unknown" name="impression">
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="form-review__fieldset fieldset fieldset--sights">
+            <h2 class="fieldset__legend fieldset__legend--control fieldset__legend--size-l fieldset__legend--divider" >
+              <span>
+                Посещенные достопримечательности:
               </span>
-              <input class="field__input" type="text" placeholder="Отчество" value="Викторович" name="lastname">
-            </label>
+            </h2>
+            <ul class="fieldset__list fieldset__list--control">
+              <li class="fieldset__item">
+                <label class="fieldset__field field field--control">
+                  <span class="field__label field__label--control">
+                    Мост Дьявола
+                  </span>
+                  <span class="field__control field__control--checkbox"></span>
+                  <input class="field__checkbox" type="checkbox" value="devils-bridge" name="sights" checked>
+                </label>
+              </li>
+              <li class="fieldset__item">
+                <label class="fieldset__field field field--control">
+                  <span class="field__label field__label--control">
+                    Гора-Колокол
+                  </span>
+                  <span class="field__control field__control--checkbox"></span>
+                  <input class="field__checkbox" type="checkbox" value="mount-bell" name="sights" checked>
+                </label>
+              </li>
+              <li class="fieldset__item">
+                <label class="fieldset__field field field--control">
+                  <span class="field__label field__label--control">
+                    Слайд-парк
+                  </span>
+                  <span class="field__control field__control--checkbox"></span>
+                  <input class="field__checkbox" type="checkbox" value="slide-park" name="sights" checked>
+                </label>
+              </li>
+              <li class="fieldset__item">
+                <label class="fieldset__field field field--control">
+                  <span class="field__label field__label--control">
+                    Красные скалы
+                  </span>
+                  <span class="field__control field__control--checkbox"></span>
+                  <input class="field__checkbox" type="checkbox" value="red-rocks" name="sights">
+                </label>
+              </li>
+            </ul>
           </div>
           <div class="form-review__fieldset fieldset">
-            <span class="fieldset__legend" >
-              Контактная информация:
-            </span>
-            <label class="fieldset__field field">
-              <span class="field__label">
-              Контактный телефон*:
+            <h2 class="fieldset__legend fieldset__legend--divider">
+              <span>
+                Опишите свои эмоции:
               </span>
-              <input class="field__input field__input--phone" type="tel" placeholder="Введите телефон" name="phone" required>
-            </label>
-            <label class="fieldset__field field">
-              <span class="field__label">
-              Электронная почта*:
-              </span>
-              <input class="field__input field__input--email" type="email" name="email" placeholder="Введите e-mail" required>
-            </label>
-          </div>
-          <div class="form-review__fieldset fieldset">
-            <span class="fieldset__legend fieldset__legend--control" >
-              Ваше общее впечатление:
-            </span>
-            <label class="fieldset__field field field--control">
-              <span class="field__label field__label--control">
-                Скорее положительное
-              </span>
-              <span class="field__control field__control--radio"></span>
-              <input class="field__radio" type="radio" value="positive" name="impression" checked>
-            </label>
-            <label class="fieldset__field field field--control">
-              <span class="field__label field__label--control">
-                Скорее отрицательное
-              </span>
-              <span class="field__control field__control--radio"></span>
-              <input class="field__radio" type="radio" value="negative" name="impression">
-            </label>
-            <label class="fieldset__field field field--control">
-              <span class="field__label field__label--control">
-                Затрудняюсь ответить
-              </span>
-              <span class="field__control field__control--radio"></span>
-              <input class="field__radio" type="radio" value="unknown" name="impression">
-            </label>
-          </div>
-          <div class="form-review__fieldset fieldset">
-            <span class="fieldset__legend fieldset__legend--control" >
-              Посещенные достопримечательности:
-            </span>
-            <label class="fieldset__field field field--control">
-              <span class="field__label field__label--control">
-                Мост Дьявола
-              </span>
-              <span class="field__control field__control--checkbox"></span>
-              <input class="field__checkbox" type="checkbox" value="devils-bridge" name="sights" checked>
-            </label>
-            <label class="fieldset__field field field--control">
-              <span class="field__label field__label--control">
-                Гора-Колокол
-              </span>
-              <span class="field__control field__control--checkbox"></span>
-              <input class="field__checkbox" type="checkbox" value="mount-bell" name="sights" checked>
-            </label>
-            <label class="fieldset__field field field--control">
-              <span class="field__label field__label--control">
-                Слайд-парк
-              </span>
-              <span class="field__control field__control--checkbox"></span>
-              <input class="field__checkbox" type="checkbox" value="slide-park" name="sights" checked>
-            </label>
-            <label class="fieldset__field field field--control">
-              <span class="field__label field__label--control">
-                Красные скалы
-              </span>
-              <span class="field__control field__control--checkbox"></span>
-              <input class="field__checkbox" type="checkbox" value="red-rocks" name="sights">
-            </label>
-          </div>
-          <div class="form-review__fieldset fieldset">
-            <span class="fieldset__legend">
-              Опишите свои эмоции:
-            </span>
+            </h2>
             <label class="visually-hidden" for="text-review">
               Добавьте отзыв.
             </label>

@@ -2,16 +2,26 @@
   background-color: $color-background-third;
   font-family: "PT Sans", sans-serif;
   color: $color-text-base;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .page__body {
   background-color: $color-background-base;
   min-height: 100%;
+  margin: 0 auto;
+  min-width: 320px;
 }
 
 .page__container {
-  width: 320px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  max-width: 1200px;
+  min-width: 320px;
+  width: 100%;
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  }
 }
+

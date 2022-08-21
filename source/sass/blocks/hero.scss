@@ -5,21 +5,36 @@
   background-position: center;
   position: relative;
     &--main {
-      padding: 77px 0 91px 0;
+      padding: 90px 0 85px 0;
       margin-bottom: 39px;
-  }
+    }
     &--inner-page {
       padding: 52px 0 67px 0;
     }
     &::after {
-      content: url(../img/hero-divider.svg);
-      display: block;
+      content: "";
       position: absolute;
+      background-image: url(../img/hero-divider.svg);
       background-repeat: no-repeat;
+      background-position: center;
       width: 100%;
       height: 57px;
-      left: -440px;
+      left: 50%;
+      transform: translateX(-50%);
       bottom: 0;
+    }
+    @media (min-width:$tablet-width) {
+        &--main {
+          padding: 78px 0 90px 0;
+      }
+      &--inner-page {
+        padding: 95px 0 117px 0;
+      }
+    }
+    @media (min-width: $desktop-width) {
+      &--inner-page {
+        padding: 100px 0 120px 0;
+      }
     }
 }
 

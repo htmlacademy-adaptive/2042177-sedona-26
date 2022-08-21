@@ -14,11 +14,15 @@
 .field__label {
   padding-left: 16px;
     &--control {
+      padding: 0;
       font-weight: 700;
       font-size: 18px;
       line-height: 26px;
       text-transform: none;
       margin-bottom: 36px;
+      @media (min-width: $tablet-width) {
+      margin: 0;
+      }
     }
 }
 
@@ -97,4 +101,9 @@
   padding: 16px;
   resize: none;
   margin-bottom: 32px;
+  @media (min-width: $tablet-width) {
+    margin:0 auto 48px;
+    width: 100%;
+    max-width: 768px;
+  }
 }

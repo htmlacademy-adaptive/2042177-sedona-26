@@ -3,6 +3,10 @@
   font-size: 14px;
   line-height: 21px;
   padding-top: 15px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .card-info__title {

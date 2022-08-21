@@ -2,10 +2,13 @@
   display: flex;
   flex-direction: column-reverse;
   padding: 25px 20px;
+  width: inherit;
+  width: 100%;
 }
 
 .photo-card__image {
   display: block;
+  width: 100%;
 }
 
 .photo-card__link {

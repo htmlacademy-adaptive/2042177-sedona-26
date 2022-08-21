@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -11,7 +12,7 @@
         <a class="main-header__logo logo" href="#">
           <img class="logo__image" src="./img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
         </a>
-        <nav class="main-header__navigation navigation">
+        <nav class="main-header__navigation navigation navigation--opened">
           <button class="navigation__toggle" type="button">
             <span class="visually-hidden">
               Меню.
@@ -67,7 +68,7 @@
               </div>
               <img class="advantages__image" src="./img/photo-city.jpg" alt="Вид на город." width="320" height="260">
               <ul class="advantages__subitems subitems">
-                <li class="subitems__item subitems__item--house advantages__card">
+                <li class="subitems__item subitems__item--house">
                   <h4 class="card__title subitems__title">
                     Жилье
                   </h4>
@@ -75,7 +76,7 @@
                     Рекомендуем пожить в настоящем мотеле, все как в кино!
                   </p>
                 </li>
-                <li class="subitems__item subitems__item--food advantages__card">
+                <li class="subitems__item subitems__item--food">
                   <h4 class="card__title subitems__title">
                     Еда
                   </h4>
@@ -83,7 +84,7 @@
                     Всегда заказывайте фирменный бургер, Вы не разочаруетесь!
                   </p>
                 </li>
-                <li class="subitems__item subitems__item--souvenir advantages__card">
+                <li class="subitems__item subitems__item--souvenir">
                   <h4 class="card__title subitems__title">
                     Сувениры
                   </h4>
@@ -163,7 +164,8 @@
           <h2 class="visually-hidden">
             Как нас найти.
           </h2>
-          <img class="map__content" src="./img/map-mobile.jpg" width="320" height="350" alt="Седона на карте.">
+          <iframe class="map__content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2275.0255738821666!2d30.315214851666216!3d59.96826866658117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e1!3m2!1sru!2sby!4v1660900674444!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </section>
       </main>
       <footer class="footer">
