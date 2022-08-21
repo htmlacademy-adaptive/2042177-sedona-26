@@ -14,14 +14,14 @@
   margin-bottom: 24px;
   max-width: 520px;
   @media (min-width: $tablet-width) {
-    font-size: 21px;
-    &--gallery {
       font-size: 30px;
       line-height: 32px;
     }
-  }
-    &--index {
-      margin-bottom: 35px;
+  &--index {
+    margin-bottom: 35px;
+    @media (min-width: $tablet-width) {
+    font-size: 21px;
+    }
   }
 }
 

@@ -102,9 +102,8 @@
   resize: none;
   margin-bottom: 32px;
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
-  }
-  @media (min-width: $desktop-width) {
-    margin: 0 96px 48px;
+    margin:0 auto 48px;
+    width: 100%;
+    max-width: 768px;
   }
 }

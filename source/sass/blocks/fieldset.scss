@@ -32,34 +32,37 @@
     width: 100%;
     &--impression {
       margin-bottom: 48px;
-      padding: 0 36px;
     }
     &--sights {
       margin-bottom: 42px;
-      padding: 0 84px;
     }
   }
   @media (min-width: $desktop-width) {
     &--impression {
       margin-bottom: 73px;
-      padding: 0 53px;
     }
     &--sights {
       margin-bottom: 87px;
-      padding: 0 44px;
     }
   }
 }
 
 @media (min-width: $tablet-width) {
+  .form-review__wrapper .fieldset {
+    padding-bottom: 15px;
+  }
+
   .form-review__wrapper .fieldset:nth-child(odd)::after {
     content: "";
     width: 1px;
-    height: 338px;
+    height: 100%;
     background-color: $color-background-form-divider;
     position: absolute;
     right: -44px;
     top: 0;
+    @media (min-width: $desktop-width) {
+      right: -64px;
+    }
   }
 }
 .fieldset__list {
@@ -79,7 +82,7 @@
     @media (min-width: $desktop-width) {
       display: flex;
       flex-wrap: wrap;
-      justify-content: flex-start;
+      justify-content: center;
       gap: 64px;
     }
   }
@@ -95,9 +98,34 @@
   @media (min-width: $tablet-width) {
   margin-bottom: 28px;
   font-size: 21px;
+  &--divider{
+    position: relative;
+  }
+  &--divider::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $color-background-form-divider;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+  }
+
+  &--divider span {
+    max-width: 400px;
+    position: relative;
+    background-color: $color-background-base;
+    display: inline-block;
+    min-width: 400px;
+    z-index: 2;
+  }
     &--contacts {
       text-align: start;
       margin-left: -18px;
+      @media (min-width: $desktop-width) {
+        margin-left: 30px;
+      }
     }
 }
     &--control {
@@ -109,51 +137,6 @@
     &--size-l {
       @media (min-width: $tablet-width) {
         margin-bottom: 69px;
-      }
-    }
-    &--divider {
-      width: 402px;
-      align-self: center;
-      position: relative;
-      background-color: $color-background-base;
-    }
-    &--divider::after {
-      content: "";
-      z-index: 0;
-      height: 1px;
-      background-color: $color-background-form-divider;
-      position: absolute;
-      top: 50%;
-      transform: rotateY(-50%);
-      left: 100%;
-      margin-right: 60px;
-      @media (min-width: $tablet-width) {
-        width: 123px;
-      }
-      @media (min-width: $desktop-width) {
-        width: 280px;
-        margin-right: 120px;
-      }
-    }
-    &--divider::before {
-      content: "";
-      min-width: 123px;
-      max-width: 339px;
-      width: 100%;
-      z-index: 0;
-      height: 1px;
-      background-color: $color-background-form-divider;
-      position: absolute;
-      top: 50%;
-      transform: rotateY(-50%);
-      margin-left: 60px;
-      right: 100%;
-      @media (min-width: $tablet-width) {
-        width: 123px;
-      }
-      @media (min-width: $desktop-width) {
-        width: 280px;
-        margin-left: 120px;
       }
     }
 }
