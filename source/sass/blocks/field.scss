@@ -100,7 +100,9 @@
   background-color: $color-input;
   padding: 16px;
   resize: none;
+  margin: 0 auto;
   margin-bottom: 32px;
+  width: 279px;
   @media (min-width: $tablet-width) {
     margin:0 auto 48px;
     width: 100%;

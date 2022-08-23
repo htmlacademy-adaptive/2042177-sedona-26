@@ -1,4 +1,11 @@
 .likes {
   display: flex;
   gap: 14px;
+  align-self: center;
+}
+
+.likes__counter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
 }

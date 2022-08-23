@@ -35,8 +35,22 @@
     &--secondary {
       background-color: $color-base;
     }
+    @media (max-width: $mobile-width) {
+      &--third {
+        position: relative;
+      }
+      &--third:not(:last-child)::after {
+        content: "";
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 89%;
+        background-color: $color-background-advantages-divider;
+      }
+    }
 @media (min-width: $tablet-width) {
-    width: 33.33%;
     background-color: $color-background-secondary;
     &--main {
       flex-direction: row;
@@ -47,9 +61,12 @@
     &--secondary {
       display: flex;
       flex-wrap: wrap;
-      flex-direction: row-reverse;
       width: 100%;
+      flex-direction: row-reverse;
       background-color: $color-base;
+    }
+    &--third {
+      width: 33.33%
     }
   }
 }

@@ -52,7 +52,9 @@
     display: block;
     top: 16px;
     right: 16px;
-    z-index: 5;
+    z-index: 3;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 23px;
     height: 23px;
   }
@@ -69,7 +71,7 @@
   display: block;
 }
 
-.navigation--closed .navigation__list {
+.navigation--closed .navigation__wrapper {
   display: none;
 }
 
@@ -88,7 +90,6 @@
 }
 
 .navigation--closed .navigation__toggle {
-  background-color: $color-background-base;
   &::after {
   content: "";
     background-image: url(../img/icons/icon-menu.svg);

@@ -29,6 +29,13 @@
     padding: 17px 0 12px;
     box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2),
     inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+    &:hover {
+      background-color: $color-button-primary-hover;
+    }
+    &:active {
+      background-color: $color-button-primary-active;
+      color: fade-out($color: $color-secondary, $amount: 0.3)
+    }
   }
   @media (min-width: $tablet-width) {
     color: $color-text-base;
@@ -38,5 +45,13 @@
     &--current {
       color: $color-text-base-current;
     }
+    &:hover {
+      color: $color-base;
+    }
+    &:active {
+      color: $color-third;
+      opacity: 0.3;
+    }
+
   }
 }
