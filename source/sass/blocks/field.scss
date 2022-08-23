@@ -38,6 +38,17 @@
     &::placeholder {
       color: $color-text-placeholder;
     }
+    &:hover {
+      background-color: $color-input-hover;
+    }
+    &:focus {
+      border: 0;
+      box-shadow: 0 0 0 3px $color-base;
+    }
+    &:active {
+      background-color: $color-background-base;
+      border: 4px solid $color-input-hover;
+    }
     &--phone::after {
       content: "";
       position: absolute;

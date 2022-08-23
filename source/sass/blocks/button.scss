@@ -10,4 +10,17 @@
   line-height: 26px;
   cursor: pointer;
   display: block;
+  &:hover {
+    background-color: $color-button-primary-hover;
+  }
+  &:focus {
+    border-color: $color-text-additional;
+  }
+  &:active {
+    background-color: $color-button-primary-active;
+    color: fade-out($color: $color-text-secondary, $amount: 0.3);
+  }
+  &:disabled {
+    background-color: $color-button-primary-disabled;
+  }
 }
