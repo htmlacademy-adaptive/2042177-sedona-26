@@ -42,16 +42,19 @@
     padding: 18px 10px 17px;
     font-size: 14px;
     line-height: 21px;
+
     &--current {
       color: $color-text-base-current;
     }
-    &:hover {
+    &:hover[href] {
       color: $color-base;
     }
-    &:active {
+    &:focus-visible {
+      outline: 2px solid $color-base;
+    }
+    &:active[href] {
       color: $color-third;
       opacity: 0.3;
     }
-
   }
 }

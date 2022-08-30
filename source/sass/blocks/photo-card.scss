@@ -12,11 +12,26 @@
   display: block;
   margin: 0 auto  ;
   @media (min-width: $tablet-width) {
-    width: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    object-fit: contain;
+    height: auto;
+  }
+}
+
+.photo-card__image-wrapper {
+  &:hover {
+    opacity: 0.6;
+  }
+  &:focus {
+    outline: 2px solid $color-base;
+    z-index: 2;
+  }
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .photo-card__link {
   margin: 0;
+  width: 100%;
 }

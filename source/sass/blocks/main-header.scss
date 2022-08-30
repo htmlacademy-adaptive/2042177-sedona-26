@@ -10,6 +10,16 @@
 .main-header__logo {
   z-index: 1;
   position: relative;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:focus {
+    outline: 2px solid $color-base;
+    z-index: 2;
+  }
+  &:active {
+    opacity: 0.3;
+  }
   @media (min-height:$tablet-width) {
     position: absolute;
     left: 50%;
