@@ -20,19 +20,35 @@
 
 .video-file {
   width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  object-fit: cover;
   @media (max-width: $mobile-width) {
+    background-image: url(../img/gallery/video-mobile.jpg);
     width: 280px;
     height: 177px;
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/gallery/video-mobile@2x.jpg)
+    }
   }
 
   @media (min-width: $tablet-width) {
     width: 648px;
     height: 500px;
+    background-image: url(../img/gallery/video-tablet.jpg);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/gallery/video-tablet@2x.jpg)
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 800px;
     height: 500px;
+    background-image: url(../img/gallery/video-desktop.jpg);
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/gallery/video-desktop@2x.jpg)
+    }
   }
 }
 

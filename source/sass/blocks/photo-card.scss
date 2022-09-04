@@ -12,9 +12,16 @@
   display: block;
   margin: 0 auto  ;
   @media (min-width: $tablet-width) {
-    max-width: 100%;
-    object-fit: contain;
-    height: auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: 267px;
+  }
+}
+
+.photo__item--top-rated .photo-card__image {
+  @media (min-width: $tablet-width) {
+    max-height: 400px;
   }
 }
 
