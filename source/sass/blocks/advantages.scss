@@ -74,7 +74,7 @@
 .advantages__image {
   display: block;
   width: auto;
-  object-fit: contain;
+  object-fit: cover;
   max-width: 100%;
   margin: 0 auto;
   @media (min-width: $tablet-width) {
