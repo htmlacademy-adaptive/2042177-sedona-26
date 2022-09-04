@@ -5,17 +5,42 @@
   padding-top: 15px;
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
+    padding: 22px 20px 15px;
     justify-content: space-between;
+    background-color: $color-input;
+  }
+  @media (min-width: $desktop-width) {
+    color: $color-secondary;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: fade-out($color: #000000, $amount: 0.3);
+  }
+}
+
+.photo__item:nth-child(2n + 3) .card-info {
+  @media (min-width: $tablet-width) {
+    background-color: $color-background-card-info-additional;
+  }
+  @media (min-width: $desktop-width) {
+    background-color: fade-out($color: #000000, $amount: 0.3);
   }
 }
 
 .card-info__title {
   font-weight: 700;
-  margin: 0 0 10px;
+  margin: 0;
   text-transform: uppercase;
+  @media (max-width: $mobile-width) {
+    margin-bottom: 11px;
+  }
 }
 
 .card-info__author {
   font-weight: 400;
-  margin: 0 0 11px;
+  margin: 0 ;
+  @media (max-width: $mobile-width) {
+    margin-bottom: 11px;
+  }
 }

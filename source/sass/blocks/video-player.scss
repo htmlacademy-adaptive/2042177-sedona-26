@@ -1,10 +1,39 @@
 .video-player {
+  padding: 0;
   position: relative;
   margin: 0 auto;
+  @media (max-width: $mobile-width) {
+    width: 280px;
+    height: 177px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    height: 500px;
+  }
 }
 
 .video-file {
   width: 100%;
+  @media (max-width: $mobile-width) {
+    width: 280px;
+    height: 177px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    height: 500px;
+  }
 }
 
 .video-player__button-control {
@@ -16,5 +45,28 @@
   z-index: 2;
   background-color: transparent;
   border: 0px;
+  cursor: pointer;
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 48px;
+    height: 54px;
+    background-image: url("../img/icons/button-play.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+  &:focus-visible {
+    outline: 4px solid $color-base;
+  }
+  &:active::after {
+    opacity: 0.3;
+  }
 }
 

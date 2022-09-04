@@ -10,8 +10,23 @@
   }
 }
 
-.social-list__item {
+.social-list__link {
+  background-color: $color-base;
+  color: $color-background-base;
   width: 48px;
   height: 48px;
-  background-color: $color-base;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: $color-button-primary-hover;
+  }
+  &:focus-visible {
+    box-shadow: 0 0 0 3px $color-base;
+    outline: 0;
+  }
+  &:active {
+    background-color: $color-button-primary-active;
+    color: $color-text-secondary-active;
+  }
 }

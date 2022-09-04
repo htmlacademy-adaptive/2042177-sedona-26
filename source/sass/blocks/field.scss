@@ -9,6 +9,27 @@
     &--control {
       padding-left: 62px;
     }
+    &--decorated {
+      position: relative;
+    }
+    &--decorated::after{
+      position: absolute;
+      content: "";
+      bottom: 0;
+      right: 0;
+      width: 58px;
+      height: 58px;
+      background-color: $color-input-decorated;
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+    &--phone::after {
+      background-image: url(../img/icons/icon-phone.svg);
+    }
+    &--email::after {
+      background-image: url(../img/icons/icon-mail.svg);
+    }
 }
 
 .field__label {
@@ -34,44 +55,38 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  position: relative;
     &::placeholder {
       color: $color-text-placeholder;
     }
-    &--phone::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 58px;
-      height: 58px;
-      background-color: #e6e6e6;
+    &:hover {
+      background-color: $color-input-hover;
+    }
+    &:focus-visible {
+      outline: 0;
+      box-shadow: 0 0 0 3px $color-base;
+    }
+    &:not(:placeholder-shown) {
+      background-color: $color-background-base;
+      border: 4px solid $color-input-hover;
     }
 }
 
+.field--decorated .field__input {
+  padding-right: 65px;
+}
+
+.field__control {
+  padding-left: 62px;
+  margin: 0;
+  width: 1px;
+  height: 1px;
+  background: $color-background-base;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 .field__radio {
-  padding-left: 62px;
-  margin: 0;
-  width: 1px;
-  height: 1px;
-  background: #FFFFFF;
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-}
-
-.field__checkbox {
-  padding-left: 62px;
-  margin: 0;
-  width: 1px;
-  height: 1px;
-  background: #FFFFFF;
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-}
-
-.field__control--radio {
   position: absolute;
   width: 46px;
   height: 46px;
@@ -81,7 +96,7 @@
   margin-top: -10px;
 }
 
-.field__control--checkbox {
+.field__checkbox {
   position: absolute;
   width: 46px;
   height: 46px;
@@ -89,6 +104,46 @@
   border-radius: 4px;
   margin-left: -62px;
   margin-top: -10px;
+}
+
+.field__radio, .field__checkbox {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 46px;
+    height: 46px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.field__control:checked + .field__radio::after {
+  background-image: url(../img/icons/marker-dot.svg);
+}
+
+.field__control:checked + .field__checkbox::after {
+  background-image: url(../img/icons/marker-check.svg);
+}
+
+.field__control:hover + .field__checkbox,
+.field__control:hover + .field__radio {
+  background-color: $color-input-hover;
+}
+
+.field__control:focus + .field__checkbox,
+.field__control:focus + .field__radio {
+  outline: none;
+  box-shadow: 0 0 0 3px $color-base;
+}
+
+.field__control:active + .field__checkbox,
+.field__control:active + .field__radio {
+  background-color: $color-input-active;
+}
+
+.field__control:checked:active + .field__checkbox::after,
+.field__control:checked:active + .field__radio::after {
+  opacity: 0.3;
 }
 
 .textarea {
@@ -100,10 +155,27 @@
   background-color: $color-input;
   padding: 16px;
   resize: none;
+  margin: 0 auto;
   margin-bottom: 32px;
+  width: 100%;
   @media (min-width: $tablet-width) {
     margin:0 auto 48px;
-    width: 100%;
     max-width: 768px;
+  }
+  &::placeholder {
+    color: $color-text-placeholder;
+  }
+
+  &:hover {
+    background-color: $color-input-hover;
+  }
+
+  &:focus {
+    outline: 3px solid $color-base;
+  }
+
+  &:not(:placeholder-shown) {
+    background-color: $color-background-base;
+    box-shadow: inset 0 0 0 4px $color-input-hover;
   }
 }
