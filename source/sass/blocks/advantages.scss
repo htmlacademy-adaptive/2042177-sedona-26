@@ -73,12 +73,19 @@
 
 .advantages__image {
   display: block;
-  width: auto;
+  width: 100%;
   object-fit: cover;
   max-width: 100%;
   margin: 0 auto;
+  max-height: 260px;
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     max-height: 256px;
+  }
+}
+
+.advantages__image-wrapper {
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
   }
 }
