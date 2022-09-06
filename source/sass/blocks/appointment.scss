@@ -7,3 +7,11 @@
   margin: 32px auto 0;
   max-width: 458px;
 }
+
+.appointment br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
