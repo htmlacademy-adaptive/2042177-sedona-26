@@ -6,18 +6,21 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
   @media (max-width: $mobile-width) {
     margin: 0 -20px;
     padding: 24px 20px;
-    &:last-child:after {
+
+    &:last-child::after {
       content: "";
       position: absolute;
       left: 0;
       bottom: 0;
       width: 100%;
       height: 1px;
-      border-bottom:1px solid $color-input-hover;
+      border-bottom: 1px solid $color-input-hover;
     }
+
     &::before {
       content: "";
       position: absolute;
@@ -25,23 +28,28 @@
       top: 0;
       width: 100%;
       height: 1px;
-      border-top:1px solid $color-input-hover;
+      border-top: 1px solid $color-input-hover;
     }
   }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     width: 100%;
+
     &--impression {
       margin-bottom: 48px;
     }
+
     &--sights {
       margin-bottom: 42px;
     }
   }
+
   @media (min-width: $desktop-width) {
     &--impression {
       margin-bottom: 73px;
     }
+
     &--sights {
       margin-bottom: 87px;
     }
@@ -61,18 +69,22 @@
     position: absolute;
     right: -44px;
     top: 0;
+
     @media (min-width: $desktop-width) {
       right: -64px;
     }
   }
 }
+
 .fieldset__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
   &--input .fieldset__item:not(:last-child) {
     margin-bottom: 16px;
   }
+
   &--control {
     @media (min-width: $tablet-width) {
       display: grid;
@@ -80,6 +92,7 @@
       justify-content: center;
       row-gap: 36px;
     }
+
     @media (min-width: $desktop-width) {
       display: flex;
       flex-wrap: wrap;
@@ -96,48 +109,56 @@
   text-align: center;
   margin: 0;
   margin-bottom: 20px;
-  @media (min-width: $tablet-width) {
-  margin-bottom: 28px;
-  font-size: 21px;
-  &--divider{
-    position: relative;
-  }
-  &--divider::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: $color-background-form-divider;
-    top: 50%;
-    left: 0;
-    z-index: 1;
-  }
 
-  &--divider span {
-    max-width: 400px;
-    position: relative;
-    background-color: $color-background-base;
-    padding: 0 60px;
-    display: inline-block;
-    z-index: 2;
-  }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+    font-size: 21px;
+
+    &--divider {
+      position: relative;
+    }
+
+    &--divider::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: $color-background-form-divider;
+      top: 50%;
+      left: 0;
+      z-index: 1;
+    }
+
+    &--divider span {
+      max-width: 400px;
+      position: relative;
+      background-color: $color-background-base;
+      padding: 0 60px;
+      display: inline-block;
+      z-index: 2;
+    }
+
     &--contacts {
       text-align: start;
       margin-left: -18px;
+
       @media (min-width: $desktop-width) {
         margin-left: 30px;
       }
     }
-}
-    &--control {
-      margin-bottom: 30px;
-      @media (min-width: $tablet-width) {
-        margin-bottom: 55px;
-      }
+  }
+
+  &--control {
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 55px;
     }
-    &--size-l {
-      @media (min-width: $tablet-width) {
-        margin-bottom: 69px;
-      }
+  }
+
+  &--size-l {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 69px;
     }
+  }
 }

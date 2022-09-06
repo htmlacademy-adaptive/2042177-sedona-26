@@ -4,24 +4,28 @@
   align-self: center;
   text-align: center;
   text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
     flex-basis: 33.33%;
     padding: 42px 32px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 43px 42px;
   }
+
   &--main {
     padding: 54px 20px 40px;
     color: $color-text-secondary;
-      @media (min-width: $tablet-width) {
-        padding: 42px 32px;
-      }
-      @media (min-width: $desktop-width) {
-        padding: 50px 52px;
-      }
+
+    @media (min-width: $tablet-width) {
+      padding: 42px 32px;
     }
 
+    @media (min-width: $desktop-width) {
+      padding: 50px 52px;
+    }
+  }
 }
 
 .card__title {

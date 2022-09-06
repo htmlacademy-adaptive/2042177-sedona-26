@@ -1,0 +1,20 @@
+.logo {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 2px solid $color-base;
+    z-index: 2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

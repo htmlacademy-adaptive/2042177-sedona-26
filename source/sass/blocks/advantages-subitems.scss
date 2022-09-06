@@ -6,44 +6,48 @@
   background-color: $color-background-base;
   display: flex;
   flex-direction: column;
+
   @media (max-width: $mobile-width) {
     gap: 30px;
   }
+
   @media (min-width: $tablet-width) {
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;;
+    flex-wrap: wrap;
     padding: 0;
   }
 }
 
 .subitems__item {
   position: relative;
+
   @media (max-width: $mobile-width) {
     padding-left: 48px;
-    align-self: center;;
-}
+    align-self: center;
+  }
 }
 
 .subitems__item--souvenir::before {
-  background-image: url(../img/icons/icon-souvenir.svg);
+  background-image: url("../img/icons/icon-souvenir.svg");
 }
 
 .subitems__item--house::before {
-  background-image: url(../img/icons/icon-home.svg);
+  background-image: url("../img/icons/icon-home.svg");
 }
 
 .subitems__item--food::before {
-  background-image: url(../img/icons/icon-food.svg);
+  background-image: url("../img/icons/icon-food.svg");
 }
-.subitems__item::before {
 
+.subitems__item::before {
   position: absolute;
   content: "";
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+
   @media (max-width: $mobile-width) {
     width: 40px;
     height: 40px;
@@ -76,6 +80,7 @@
   .subitems__item {
     padding-bottom: 80px;
   }
+
   .subitems__item--souvenir br {
     display: inline;
   }
@@ -88,6 +93,7 @@
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 16px;
+
   @media (max-width: $mobile-width) {
     max-width: 290px;
     margin: 0;
@@ -99,7 +105,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+
   @media (max-width: $mobile-width) {
-  margin: 0;
-}
+    margin: 0;
+  }
 }
