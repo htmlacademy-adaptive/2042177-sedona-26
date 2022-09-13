@@ -2,6 +2,10 @@
   display: flex;
   gap: 14px;
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 10px;
+  }
 }
 
 .likes__button {

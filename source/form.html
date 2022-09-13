@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Форма отзыва</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="page__body">
     <div class="page__container">
@@ -48,12 +50,12 @@
           </div>
         </nav>
       </header>
-      <main class="main review">
+      <main class="review">
         <div class="review__hero hero hero--inner-page">
           <img class="hero__image" src="./img/welcome-inner.svg" width="229" height="39" alt="Седона.">
         </div>
         <div class="review__header section">
-          <h1 class="title section__title title--form">
+          <h1 class="section__title section__title--form">
             Оставьте свой отзыв
           </h1>
           <p class="section__description ">
@@ -61,10 +63,10 @@
             а&nbsp;также о посещенных вами достопримечательностях
           </p>
         </div>
-        <form class="review__form form form-review " action="https://echo.htmlacademy.ru/" method="post">
+        <form class="review__form form-review " action="https://echo.htmlacademy.ru/" method="post">
           <div class="form-review__wrapper">
-            <div class="form-review__fieldset fieldset">
-              <h2 class="fieldset__legend" >
+            <div class="form-review__fieldset fieldset fieldset--user">
+              <h2 class="fieldset__legend fieldset__legend--full-name" >
                 Представьтесь:
               </h2>
               <ul class="fieldset__list fieldset__list--input">
@@ -199,7 +201,7 @@
               </li>
             </ul>
           </div>
-          <div class="form-review__fieldset fieldset">
+          <div class="form-review__fieldset fieldset fieldset--textarea">
             <h2 class="fieldset__legend fieldset__legend--divider">
               <span>
                 Опишите свои эмоции:
@@ -218,8 +220,8 @@
           </span>
         </form>
       </main>
-      <div class="modal-container modal-container--close">
-        <div class="modal modal-hint modal-hint--error">
+      <div class="modal-container modal-container--hint-error modal-container--close">
+        <div class="modal-container__modal modal modal--hint-error">
           <section class="modal__content">
             <h2 class="modal__title">
               Что-то пошло не так!
@@ -233,16 +235,18 @@
           </section>
         </div>
       </div>
-      <div class="modal-container modal-container--close">
-        <div class="modal modal-hint modal-hint--success">
+      <div class="modal-container modal-container--hint-success modal-container--close">
+        <div class="modal-container__modal modal modal--hint-success">
           <section class="modal__content">
-            <h2 class="modal__title">
-              Ваш отзыв отправлен!
-            </h2>
-            <p class="modal__description text-description">
-              Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
-              его на сайте.
-            </p>
+            <div class="modal__text-content">
+              <h2 class="modal__title">
+                Ваш отзыв отправлен!
+              </h2>
+              <p class="modal__description modal__description--success">
+                Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
+                его на сайте.
+              </p>
+            </div>
             <div class="modal__close-section">
               <button class="modal__button modal__button--close button" type="button">
                 Закрыть окно
@@ -285,7 +289,7 @@
           <span class="link__title">
             Разработано
           </span>
-          <svg width="36" height="36" fill="currentColor">
+          <svg width="27" height="36" fill="currentColor">
             <use href="./img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>

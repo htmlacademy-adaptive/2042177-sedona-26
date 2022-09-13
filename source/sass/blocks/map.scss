@@ -1,6 +1,25 @@
 .map__content {
   display: block;
-  margin-bottom: 10px;
   width: 100%;
   border: none;
+  max-height: 350px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 10px;
+  }
+
+  &--nojs {
+    display: none;
+  }
+}
+
+.map__image {
+  display: none;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+
+  &--nojs {
+    display: block;
+  }
 }

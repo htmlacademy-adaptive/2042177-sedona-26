@@ -58,7 +58,7 @@
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    top: 59px;
+    top: 57px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -68,7 +68,7 @@
   .subitems__item {
     flex-basis: 33.33%;
     text-align: center;
-    padding: 158px 32px 59px;
+    padding: 158px 32px 61px;
   }
 
   .subitems__item--souvenir br {
@@ -78,7 +78,7 @@
 
 @media (min-width: $desktop-width) {
   .subitems__item {
-    padding-bottom: 80px;
+    padding-bottom: 83px;
   }
 
   .subitems__item--souvenir br {
@@ -92,12 +92,16 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin-bottom: 16px;
+  margin-bottom: 22px;
 
   @media (max-width: $mobile-width) {
     max-width: 290px;
     margin: 0;
     margin-bottom: 16px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
   }
 }
 

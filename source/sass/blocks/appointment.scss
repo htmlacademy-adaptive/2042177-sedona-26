@@ -1,11 +1,31 @@
 .appointment {
   padding: 40px 18px 50px;
+
+  @media (min-width: $tablet-width) {
+    padding: 57px 60px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 58px 120px 66px;
+  }
+}
+
+.appointment .section__title {
+  margin-bottom: 28px;
 }
 
 .appointment__button {
   padding: 16px 0;
-  margin: 32px auto 0;
+  margin: 30px auto 0;
   max-width: 458px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 47px;
+  }
 }
 
 .appointment br {

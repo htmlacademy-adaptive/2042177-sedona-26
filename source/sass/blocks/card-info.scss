@@ -7,7 +7,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 22px 20px 15px;
+    padding: 22px 20px 17px;
     justify-content: space-between;
     background-color: $color-input;
   }
@@ -17,6 +17,9 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    max-height: 50%;
+    overflow: auto;
+    z-index: 2;
     background-color: fade-out($color: #000000, $amount: 0.3);
   }
 }
@@ -33,11 +36,12 @@
 
 .card-info__title {
   font-weight: 700;
+  font-size: 14px;
   margin: 0;
   text-transform: uppercase;
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 11px;
+    margin-bottom: 0;
   }
 }
 
@@ -46,6 +50,10 @@
   margin: 0;
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 11px;
+    margin-bottom: 12px;
   }
+}
+
+.card-info__author-name {
+  font-style: normal;
 }

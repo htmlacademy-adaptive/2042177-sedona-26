@@ -12,18 +12,39 @@
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 24px;
-  max-width: 520px;
+  max-width: 520 px;
+
+  &--index {
+    font-size: 21px;
+    margin-bottom: 30px;
+    line-height: 28px;
+  }
+
+  &--gallery {
+    margin-bottom: 26px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 32px;
+
+    &--index {
+      font-size: 21px;
+      line-height: 26px;
+    }
+
+    &--gallery {
+      margin-bottom: 30px;
+    }
+
+    &--form {
+      margin-bottom: 21px;
+    }
   }
 
-  &--index {
-    margin-bottom: 35px;
-
-    @media (min-width: $tablet-width) {
-      font-size: 21px;
+  @media (min-width: $desktop-width) {
+    &--form {
+      margin-bottom: 29px;
     }
   }
 }
