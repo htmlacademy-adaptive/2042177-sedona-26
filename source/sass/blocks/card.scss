@@ -1,27 +1,35 @@
 .card {
   font-family: inherit;
-  padding: 26px 18px;
-  align-self: center;
+  padding: 26px 18px 24px;
   text-align: center;
   text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
     flex-basis: 33.33%;
     padding: 42px 32px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 43px 42px;
+    min-height: 256px;
   }
+
   &--main {
-    padding: 54px 20px 40px;
+    padding: 39px 20px 38px;
     color: $color-text-secondary;
-      @media (min-width: $tablet-width) {
-        padding: 42px 32px;
-      }
-      @media (min-width: $desktop-width) {
-        padding: 50px 52px;
-      }
+
+    @media (min-width: $tablet-width) {
+      padding: 42px 32px;
     }
 
+    @media (min-width: $desktop-width) {
+      padding: 50px 52px;
+    }
+  }
+}
+
+.advantages__item--secondary .card {
+  padding-bottom: 35px;
 }
 
 .card__title {
@@ -30,6 +38,16 @@
   font-size: 18px;
   line-height: 26px;
   margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.card__title br {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .card__description {
@@ -38,6 +56,22 @@
   line-height: 21px;
   margin: 0 auto;
   max-width: 290px;
+}
+
+.advantages__item--third .card__description {
+  @media (max-width: $mobile-width) {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--third .card__description {
+    max-width: 178px;
+
+    @media (min-width: $desktop-width) {
+      max-width: 290px;
+    }
+  }
 }
 
 .card__description br {
@@ -55,22 +89,24 @@
 }
 
 .advantages__item--secondary .card__description {
-  max-width: 243px;
-}
+  max-width: 240px;
 
-.advantages__item--secondary br {
   @media (max-width: $mobile-width) {
-    display: none;
+    max-width: 100%;
   }
 
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
+  & br {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
 
-  @media (min-width: $desktop-width) {
-    display: inline;
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
   }
 }
+
+
 
 .card__numeration {
   font-weight: 400;
@@ -78,4 +114,8 @@
   line-height: 21px;
   margin: 0;
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 }

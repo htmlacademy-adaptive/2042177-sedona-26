@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Фото и видео</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="page__body">
     <div class="page__container">
@@ -48,7 +50,7 @@
           </div>
         </nav>
       </header>
-      <main class="main gallery">
+      <main class="gallery">
         <div class="gallery__hero hero hero--inner-page">
           <img class="hero__image" src="./img/welcome-inner.svg" width="229" height="39" alt="Седона.">
         </div>
@@ -67,7 +69,7 @@
           </h2>
           <ul class="photo__list">
             <li class="photo__item photo__item--top-rated">
-              <article class="photo-card photo-card">
+              <article class="photo__content photo-card">
                 <div class="photo-card__info card-info">
                   <div class="card-info__text-wrapper">
                     <h3 class="card-info__title">
@@ -86,7 +88,7 @@
                         Поставить лайк.
                       </span>
                       <svg class="likes__icon" width="22" height="20" fill="currentColor" aria-hidden="true">
-                        <use href="./img/sprite.svg#icon-like"></use>
+                        <use href="./img/sprite.svg#like-icon"></use>
                       </svg>
                     </button>
                     <span class="likes__counter">
@@ -96,15 +98,18 @@
                 </div>
                 <a class="photo-card__image-wrapper" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img/gallery/gallery-photo-1-desktop@1x.webp 1x, ./img/gallery/gallery-photo-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery/gallery-photo-1-tablet@1x.webp 1x, ./img/gallery/gallery-photo-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/gallery/gallery-photo-1.webp 1x, ./img/gallery/gallery-photo-1@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="./img/gallery/gallery-photo-1-desktop@1x.jpg 1x, ./img/gallery/gallery-photo-1-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/gallery/gallery-photo-1-tablet@1x.jpg 1x, ./img/gallery/gallery-photo-1-tablet@2x.jpg 2x">
-                    <img class="photo-card__image" src="./img/gallery/gallery-photo-1.jpg" srcset="./img/gallery/gallery-photo-1@2x.jpg 2x" alt="Вид на дорогу в пустыне.">
+                    <img class="photo-card__image" loading="lazy" src="./img/gallery/gallery-photo-1.jpg" srcset="./img/gallery/gallery-photo-1@2x.jpg 2x" alt="Вид на дорогу в пустыне.">
                   </picture>
                 </a>
               </article>
             </li>
             <li class="photo__item">
-              <article class="photo-card">
+              <article class="photo__content photo-card">
                 <div class="photo-card__info card-info">
                   <div class="card-info__text-wrapper">
                     <h3 class="card-info__title">
@@ -123,7 +128,7 @@
                         Поставить лайк.
                       </span>
                       <svg class="likes__icon" width="22" height="20" fill="currentColor" aria-hidden="true">
-                        <use href="./img/sprite.svg#icon-like"></use>
+                        <use href="./img/sprite.svg#like-icon"></use>
                       </svg>
                     </button>
                     <span class="likes__counter">
@@ -133,15 +138,18 @@
                 </div>
                 <a class="photo-card__image-wrapper" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img/gallery/gallery-photo-2-desktop@1x.webp 1x, ./img/gallery/gallery-photo-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery/gallery-photo-2-tablet@1x.webp 1x, ./img/gallery/gallery-photo-2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/gallery/gallery-photo-2.webp 1x, ./img/gallery/gallery-photo-2@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="./img/gallery/gallery-photo-2-desktop@1x.jpg 1x, ./img/gallery/gallery-photo-2-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/gallery/gallery-photo-2-tablet@1x.jpg 1x, ./img/gallery/gallery-photo-2-tablet@2x.jpg 2x">
-                    <img class="photo-card__image" src="./img/gallery/gallery-photo-2.jpg" srcset="./img/gallery/gallery-photo-2@2x.jpg 2x" alt="Растение с желтыми цыетами на фоне гор.">
+                    <img class="photo-card__image" loading="lazy" src="./img/gallery/gallery-photo-2.jpg" srcset="./img/gallery/gallery-photo-2@2x.jpg 2x" alt="Растение с желтыми цыетами на фоне гор.">
                   </picture>
-                 </a>
+                </a>
               </article>
             </li>
             <li class="photo__item">
-              <article class="photo-card">
+              <article class="photo__content photo-card">
                 <div class="photo-card__info card-info">
                   <div class="card-info__text-wrapper">
                     <h3 class="card-info__title">
@@ -160,25 +168,28 @@
                         Поставить лайк.
                       </span>
                       <svg class="likes__icon" width="22" height="20" fill="currentColor" aria-hidden="true">
-                        <use href="./img/sprite.svg#icon-like"></use>
+                        <use href="./img/sprite.svg#like-icon"></use>
                       </svg>
                     </button>
                     <span class="likes__counter">
-                      143
+                      96
                     </span>
                   </div>
                 </div>
                 <a class="photo-card__image-wrapper" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img/gallery/gallery-photo-3-desktop@1x.webp 1x,./img/gallery/gallery-photo-3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery/gallery-photo-3-tablet@1x.webp 1x, ./img/gallery/gallery-photo-3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/gallery/gallery-photo-3.webp 1x, ./img/gallery/gallery-photo-3@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="./img/gallery/gallery-photo-3-desktop@1x.jpg 1x, ./img/gallery/gallery-photo-3-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/gallery/gallery-photo-3-tablet@1x.jpg 1x, ./img/gallery/gallery-photo-3-tablet@2x.jpg 2x">
-                    <img class="photo-card__image" src="./img/gallery/gallery-photo-3.jpg" srcset="./img/gallery/gallery-photo-3@2x.jpg 2x" alt="Горная дорога.">
+                    <img class="photo-card__image" loading="lazy" src="./img/gallery/gallery-photo-3.jpg" srcset="./img/gallery/gallery-photo-3@2x.jpg 2x" alt="Горная дорога.">
                   </picture>
                 </a>
               </article>
             </li>
             <li class="photo__item">
-              <article class="photo-card">
+              <article class="photo__content photo-card">
                 <div class="photo-card__info card-info">
                   <div class="card-info__text-wrapper">
                     <h3 class="card-info__title">
@@ -197,7 +208,7 @@
                         Поставить лайк.
                       </span>
                       <svg class="likes__icon" width="22" height="20" fill="currentColor" aria-hidden="true">
-                        <use href="./img/sprite.svg#icon-like"></use>
+                        <use href="./img/sprite.svg#like-icon"></use>
                       </svg>
                     </button>
                     <span class="likes__counter">
@@ -207,9 +218,12 @@
                 </div>
                 <a class="photo-card__image-wrapper" href="#">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="./img/gallery/gallery-photo-4-desktop@1x.webp 1x,./img/gallery/gallery-photo-4-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery/gallery-photo-4-tablet@1x.webp 1x, ./img/gallery/gallery-photo-4-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/gallery/gallery-photo-4.webp 1x, ./img/gallery/gallery-photo-4@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="./img/gallery/gallery-photo-4-desktop@1x.jpg 1x, ./img/gallery/gallery-photo-4-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="./img/gallery/gallery-photo-4-tablet@1x.jpg 1x, ./img/gallery/gallery-photo-4-tablet@2x.jpg 2x">
-                  <img class="photo-card__image" src="./img/gallery/gallery-photo-4.jpg" srcset="./img/gallery/gallery-photo-4@2x.jpg 2x" alt="Вид на мост Дьявола.">
+                  <img class="photo-card__image" loading="lazy" src="./img/gallery/gallery-photo-4.jpg" srcset="./img/gallery/gallery-photo-4@2x.jpg 2x" alt="Вид на мост Дьявола.">
                   </picture>
                 </a>
               </article>
@@ -217,12 +231,12 @@
           </ul>
         </section>
         <section class="gallery__video video-presentation">
-          <div class="gallery__header--video-presentation section">
+          <div class="gallery__header gallery__header--video-presentation section">
             <h2 class="section__title">
               Все еще сомневаетесь?
             </h2>
             <p class="section__description">
-              Смотрите видеопрезентацию и скорее за&nbsp;билетами, пока они<br />
+              Смотрите видеопрезентацию и скорее за&nbsp;билетами, пока они<br />&nbsp;
               не подорожали в&nbsp;очередной раз!
             </p>
           </div>
@@ -247,7 +261,7 @@
             <a class="social-list__link" href="https://vk.com/htmlacademy" target="_blank">
               <span class="visually-hidden">Мы Вконтакте.</span>
               <svg class="social-list__icon" width="24" height="24" fill="currentColor">
-                <use href="./img/sprite.svg#icon-vk"></use>
+                <use href="./img/sprite.svg#icon-social-vk"></use>
               </svg>
             </a>
           </li>
@@ -255,7 +269,7 @@
             <a class="social-list__link" href="https://t.me/htmlacademy" target="_blank">
               <span class="visually-hidden">Мы в Телеграме.</span>
               <svg class="social-list__icon" width="24" height="24" fill="currentColor">
-                <use href="./img/sprite.svg#icon-tg"></use>
+                <use href="./img/sprite.svg#icon-social-telegram"></use>
               </svg>
             </a>
           </li>
@@ -263,7 +277,7 @@
             <a class="social-list__link" href="https://youtube.com/user/htmlacademyru" target="_blank">
               <span class="visually-hidden">Мы в YouTube.</span>
               <svg class="social-list__icon" width="24" height="24" fill="currentColor">
-                <use href="./img/sprite.svg#icon-youtube"></use>
+                <use href="./img/sprite.svg#icon-social-youtube"></use>
               </svg>
             </a>
           </li>
@@ -272,8 +286,8 @@
           <span class="link__title">
             Разработано
           </span>
-          <svg width="36" height="36" viewBox="0 0 36 36" fill="currentColor">
-            <use href="./img/sprite.svg#icon-academy"></use>
+          <svg width="27" height="36" fill="currentColor">
+            <use href="./img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </footer>

@@ -2,22 +2,30 @@
   display: flex;
   gap: 14px;
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 10px;
+  }
 }
 
 .likes__button {
   padding: 0;
   background-color: transparent;
   color: $color-text-placeholder;
+
   @media (min-width: $desktop-width) {
     color: $color-secondary;
   }
+
   &:hover {
     color: $color-base;
     background-color: transparent;
   }
+
   &:focus-visible {
     outline: 2px solid $color-base;
   }
+
   &:active {
     background-color: transparent;
     color: $color-base;

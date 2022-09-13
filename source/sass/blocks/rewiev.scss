@@ -1,13 +1,16 @@
 .review__header {
   padding: 36px 20px 0;
   margin-bottom: 28px;
+
   @media (min-width: $tablet-width) {
-    padding: 64px 60px 0;
-    }
+    padding: 61px 60px 0;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 115px 120px 0;
+    padding: 111px 120px 0;
   }
 }
+
 @media (max-width: $mobile-width) {
   .review__header br {
     display: none;

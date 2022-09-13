@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="page__body">
     <div class="page__container">
@@ -53,10 +55,10 @@
           <img class="hero__image" src="./img/welcome.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
         </div>
         <h1 class="section__title section__title--index">
-          Седона&nbsp;&mdash; небольшой городок&nbsp;в&nbsp;Аризоне,<br />
+          Седона&nbsp;&mdash; небольшой городок&nbsp;в&nbsp;Аризоне,<br />&nbsp;
           заслуживающий&nbsp;большего!
         </h1>
-        <section class="main__section advantages">
+        <section class="main__section section advantages">
           <h2 class="section__description section__description--advantages">
             Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!
           </h2>
@@ -64,7 +66,7 @@
             <li class="advantages__item advantages__item--main">
               <div class="advantages__card card card--main">
                 <h3 class="card__title">
-                  Настоящий<br /> городок
+                  Настоящий<br />&nbsp;городок
                 </h3>
                 <p class="card__numeration">
                   — №1 —
@@ -79,7 +81,7 @@
                 <source type="image/webp" srcset="./img/photo-city.webp 1x, ./img/photo-city@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="./img/photo-city-desktop@1x.jpg 1x,./img/photo-city-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/photo-city-tablet@1x.jpg 1x,./img/photo-city-tablet@2x.jpg 2x">
-                <img class="advantages__image" src="./img/photo-city.jpg" srcset="./img/photo-city@2x.jpg 2x" alt="Вид на город.">
+                <img class="advantages__image" loading="lazy" src="./img/photo-city.jpg" srcset="./img/photo-city@2x.jpg 2x" alt="Вид на город.">
               </picture>
               <ul class="advantages__subitems subitems">
                 <li class="subitems__item subitems__item--house">
@@ -103,7 +105,7 @@
                     Сувениры
                   </h4>
                   <p class="card__description subitems__description">
-                    Не&nbsp;только китайского,<br /> но и местного производства!
+                    Не&nbsp;только китайского,<br />&nbsp;но и местного производства!
                   </p>
                 </li>
               </ul>
@@ -111,25 +113,28 @@
             <li class="advantages__item advantages__item--secondary">
               <div class="advantages__card card card--main">
                 <h3 class="card__title">
-                  Там есть<br /> мост дьявола
+                  Там есть<br />&nbsp;мост дьявола
                 </h3>
                 <p class="card__numeration">
                   — №2 —
                 </p>
                 <p class="card__description">
-                  Да, по&nbsp;нему можно пройти! <br /> Если вы осмелитесь, конечно
+                  Да, по&nbsp;нему можно пройти!<br />&nbsp;Если вы осмелитесь, конечно
                 </p>
               </div>
               <picture class="advantages__image-wrapper">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-bridge-desktop@1x.webp 1x,./img/photo-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-bridge-tablet@1x.webp 1x,./img/photo-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/photo-bridge.webp 1x, ./img/photo-bridge@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="./img/photo-bridge-desktop@1x.jpg 1x,./img/photo-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet@1x.jpg 1x,./img/photo-bridge-tablet@2x.jpg 2x">
-                <img class="advantages__image" src="./img/photo-bridge.jpg" srcset="./img/photo-bridge@2x.jpg 2x" alt="Мост дьявола.">
+                <img class="advantages__image" loading="lazy" src="./img/photo-bridge.jpg" srcset="./img/photo-bridge@2x.jpg 2x" alt="Мост дьявола.">
               </picture>
             </li>
             <li class="advantages__item advantages__item--third">
               <div class="advantages__card card">
                 <h3 class="card__title">
-                  Небольшая<br /> площадь
+                  Небольшая<br />&nbsp;площадь
                 </h3>
                 <p class="card__numeration">
                   — №3 —
@@ -142,26 +147,26 @@
             <li class="advantages__item advantages__item--third">
               <div class="advantages__card card">
                 <h3 class="card__title">
-                  Красивая<br /> дорога
+                  Красивая<br />&nbsp; дорога
                 </h3>
                 <p class="card__numeration">
                   — №4 —
                 </p>
                 <p class="card__description">
-                  Ехать в&nbsp;Седону из <br />Лас-Вегаса совсем не&nbsp;скучно!
+                  Ехать в&nbsp;Седону из<br />&nbsp;Лас-Вегаса совсем не&nbsp;скучно!
                 </p>
               </div>
             </li>
             <li class="advantages__item advantages__item--third">
               <div class="advantages__card card">
                 <h3 class="card__title">
-                  Мало<br /> туристов
+                  Мало<br />&nbsp;туристов
                 </h3>
                 <p class="card__numeration">
                   — №5 —
                 </p>
                 <p class="card__description">
-                  Большинство едет в<br /> Гранд Каньон и<br /> толпится там
+                  Большинство едет в<br />&nbsp;Гранд Каньон и толпится там
                 </p>
               </div>
             </li>
@@ -172,18 +177,19 @@
             Заинтересовались?
           </h2>
           <p class="section__description">
-            Укажите предполагаемые даты поездки,<br />
+            Укажите предполагаемые даты поездки,<br />&nbsp;
             и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Cедоне
           </p>
           <a class="button appointment__button" href="#">
             Найти гостиницу
           </a>
         </section>
-        <section class="main__section map">
+        <section class="main__map map">
           <h2 class="visually-hidden">
             Как нас найти.
           </h2>
-          <iframe class="map__content" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52376.30866981861!2d-111.7815252!3d34.8683042!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1662305695100!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </iframe>
+          <iframe class="map__content map__content--nojs" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d52376.30866981861!2d-111.7815252!3d34.8683042!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1662305695100!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <img class="map__image map__image--nojs" loading="lazy" width="1200" height="350" src="./img/map@1x.jpg" srcset="./img/map@2x.jpg 2x" alt="Седона на карте.">
         </section>
       </main>
       <footer class="footer">
@@ -195,7 +201,7 @@
             <a class="social-list__link" href="https://vk.com/htmlacademy" target="_blank">
               <span class="visually-hidden">Мы Вконтакте.</span>
               <svg class="social-list__icon" width="24" height="24" fill="currentColor">
-                <use href="./img/sprite.svg#icon-vk"></use>
+                <use href="./img/sprite.svg#icon-social-vk"></use>
               </svg>
             </a>
           </li>
@@ -203,7 +209,7 @@
             <a class="social-list__link" href="https://t.me/htmlacademy" target="_blank">
               <span class="visually-hidden">Мы в Телеграме.</span>
               <svg class="social-list__icon" width="24" height="24" fill="currentColor">
-                <use href="./img/sprite.svg#icon-tg"></use>
+                <use href="./img/sprite.svg#icon-social-telegram"></use>
               </svg>
             </a>
           </li>
@@ -211,7 +217,7 @@
             <a class="social-list__link" href="https://youtube.com/user/htmlacademyru" target="_blank">
               <span class="visually-hidden">Мы в YouTube.</span>
               <svg class="social-list__icon" width="24" height="24" fill="currentColor">
-                <use href="./img/sprite.svg#icon-youtube"></use>
+                <use href="./img/sprite.svg#icon-social-youtube"></use>
               </svg>
             </a>
           </li>
@@ -220,8 +226,8 @@
           <span class="link__title">
             Разработано
           </span>
-          <svg width="36" height="36" fill="currentColor">
-            <use href="./img/sprite.svg#icon-academy"></use>
+          <svg width="27" height="36" fill="currentColor">
+            <use href="./img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </footer>

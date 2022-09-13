@@ -1,10 +1,20 @@
 .video-presentation {
-  padding: 17px 20px 0;
+  padding: 18px 20px 0;
+
   @media (min-width: $tablet-width) {
-    padding: 58px 60px 40px;
+    padding: 51px 60px 40px;
   }
+
   @media (min-width: $desktop-width) {
-    padding-top: 62px 120px 84px;
+    padding: 57px 120px 84px;
+  }
+}
+
+.video-presentation .section__title {
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
   }
 }
 
