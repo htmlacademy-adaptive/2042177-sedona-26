@@ -39,6 +39,10 @@
   &--food::before {
     background-image: url("../img/icons/icon-food.svg");
   }
+
+  &--souvenir br {
+    display: none;
+  }
 }
 
 .subitems__item::before {
@@ -86,7 +90,6 @@
   }
 }
 
-
 .subitems__title {
   margin: 0;
   font-weight: 700;
@@ -95,7 +98,6 @@
   margin-bottom: 22px;
 
   @media (max-width: $mobile-width) {
-    max-width: 290px;
     margin: 0;
     margin-bottom: 16px;
   }
@@ -109,6 +111,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  max-width: 290px;
+  margin: 0 auto;
 
   @media (max-width: $mobile-width) {
     margin: 0;

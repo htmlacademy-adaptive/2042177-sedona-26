@@ -11,6 +11,16 @@
   }
 }
 
+.review__header .section__title {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .review__header br {
     display: none;

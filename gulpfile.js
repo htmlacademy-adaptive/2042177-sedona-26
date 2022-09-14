@@ -21,7 +21,7 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer(), csso()]))
-    .pipe(rename("style.min.css"))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
@@ -110,7 +110,7 @@ export const copy = () => {
 
 // Clean
 
-export const clean = () => {
+const clean = () => {
   return deleteAsync('build');
 }
 

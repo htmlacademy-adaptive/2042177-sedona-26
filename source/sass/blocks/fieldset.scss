@@ -132,6 +132,10 @@
   }
 }
 
+.fieldset__list--control .fieldset__item {
+  max-width: 280px;
+}
+
 .fieldset__legend {
   font-weight: 700;
   font-size: 18px;
