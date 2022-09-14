@@ -12,10 +12,8 @@
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 24px;
-  max-width: 520px;
 
   &--index {
-    font-size: 21px;
     margin-bottom: 30px;
     line-height: 28px;
   }
@@ -25,6 +23,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    max-width: 520px;
     font-size: 30px;
     line-height: 32px;
 
