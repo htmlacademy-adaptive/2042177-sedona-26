@@ -7,13 +7,13 @@
 }
 
 .page__body {
-  background-color: $color-background-base;
   min-height: 100%;
   margin: 0 auto;
   min-width: 320px;
 }
 
 .page__container {
+  background-color: $color-background-base;
   margin: 0 auto;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
