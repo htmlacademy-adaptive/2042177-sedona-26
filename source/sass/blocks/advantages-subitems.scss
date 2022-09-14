@@ -27,18 +27,18 @@
     padding-left: 48px;
     align-self: center;
   }
-}
 
-.subitems__item--souvenir::before {
-  background-image: url("../img/icons/icon-souvenir.svg");
-}
+  &--souvenir::before {
+    background-image: url("../img/icons/icon-souvenir.svg");
+  }
 
-.subitems__item--house::before {
-  background-image: url("../img/icons/icon-home.svg");
-}
+  &--house::before {
+    background-image: url("../img/icons/icon-home.svg");
+  }
 
-.subitems__item--food::before {
-  background-image: url("../img/icons/icon-food.svg");
+  &--food::before {
+    background-image: url("../img/icons/icon-food.svg");
+  }
 }
 
 .subitems__item::before {

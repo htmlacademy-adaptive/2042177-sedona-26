@@ -159,7 +159,7 @@
       z-index: 1;
     }
 
-    &--divider span {
+    &--divider .fieldset__legend-text {
       max-width: 400px;
       position: relative;
       background-color: $color-background-base;
@@ -173,11 +173,11 @@
     margin-bottom: 30px;
 
     @media (min-width: $tablet-width) {
-      margin:0 0 39px;
+      margin: 0 0 39px;
     }
 
     @media (min-width: $desktop-width) {
-      margin:0 0 56px;
+      margin: 0 0 56px;
     }
   }
 
@@ -210,5 +210,10 @@
       margin-left: 57px;
     }
   }
+}
 
+@media (max-width: $mobile-width) {
+  .form-review__wrapper .fieldset:last-child::after {
+    display: none;
+  }
 }
