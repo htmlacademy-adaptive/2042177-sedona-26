@@ -24,7 +24,10 @@
 
   @media (max-width: $mobile-width) {
     border-bottom: 1px solid $color-input-hover;
-    border-top: 1px solid $color-input-hover;
+
+    &:first-child {
+      border-top: 1px solid $color-input-hover;
+    }
   }
 
   @media (min-width: $tablet-width) {
