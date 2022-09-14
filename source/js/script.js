@@ -13,8 +13,8 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-let interactiveMap = document.querySelector(".map__content");
-let imageMap = document.querySelector(".map__image");
+let interactiveMap = document.querySelector('.map__content');
+let imageMap = document.querySelector('.map__image');
 
-interactiveMap.classList.remove("map__content--nojs");
-imageMap.classList.remove("map__image--nojs");
+interactiveMap.classList.remove('map__content--nojs');
+imageMap.classList.remove('map__image--nojs');

@@ -26,6 +26,14 @@
   }
 }
 
+.gallery__header .section__title {
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+}
+
 @media (max-width: $mobile-width) {
   .gallery__header br {
     display: none;
