@@ -112,10 +112,11 @@
     }
 
     @media (min-width: $desktop-width) {
+      padding: 0;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 64px;
+      column-gap: 0;
+      margin: 0 -32px;
     }
   }
 }
@@ -127,13 +128,23 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 45px;
-    gap: 64px;
+    padding: 0;
   }
 }
 
 .fieldset__list--control .fieldset__item {
   max-width: 280px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 32px;
+    max-width: 33.33%;
+  }
+}
+
+.fieldset--sights .fieldset__item {
+  @media (min-width: $desktop-width) {
+    max-width: 25%;
+  }
 }
 
 .fieldset__legend {
